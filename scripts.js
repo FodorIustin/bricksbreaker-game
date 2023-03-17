@@ -15,4 +15,7 @@ function smileFaceRadu() {
 
   // right eye
   circle(220, 180, 20);
+
+  // left eye
+  circle(180, 180, 20);
 }
