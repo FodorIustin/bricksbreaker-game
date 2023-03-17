@@ -9,5 +9,10 @@ function draw(){
 
 
 function smileFaceRadu() {
-  circle(200,200, 100)
+  // skin
+  fill("#ffff00");
+  circle(200, 200, 100);
+
+  // right eye
+  circle(220, 180, 20);
 }
