@@ -3,8 +3,8 @@ function setup() {
 }
 function draw(){
   background("#00ffff")
-  smileFaceIustin(85,200);
-  smileFaceRadu(200, 200);
+  smileFaceIustin(90,200);
+  smileFaceRadu(200, 250);
 }
 
 function smileFaceIustin(x,y){
