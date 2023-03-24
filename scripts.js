@@ -3,27 +3,27 @@ function setup() {
 }
 function draw(){
   background("#00ffff")
-  smileFaceIustin();
+  smileFaceIustin(85,200);
   smileFaceRadu(200, 200);
 }
 
-function smileFaceIustin(){
+function smileFaceIustin(x,y){
   //skin
   fill(255, 204, 0)
-  circle(200,200, 100)
+  circle(x,y, 100)
 
   //eyes
-  circle(217,190,10)
-  circle(217,190,1)
+  circle(x+17,y-10,10)
+  circle(x+17,y-10,1)
 
-  circle(183,190,10)
-  circle(183,190,1)
+  circle(x-17,y-10,10)
+  circle(x-17,y-10,1)
 
-  line(170, 170, 190, 190);
-  line(230, 200, 210, 210);
+  line(x-30, y-30, x-10, y-10);
+  line(x+30, y, x+10, y+10);
 
   //mouth
-  arc(200 ,220 , 43 , 25 , 0 ,Math.PI)
+  arc(x ,y+20 , 43 , 25 , 0 ,Math.PI)
 
 
 }
