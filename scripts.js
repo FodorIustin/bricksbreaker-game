@@ -1,59 +1,23 @@
+
 function setup() {
   createCanvas(400, 400)
 }
+
 function draw(){
   background("#00ffff")
-  smileFaceIustin(85,200);
-  smileFaceRadu(200, 200);
-}
 
-function smileFaceIustin(x,y){
-  //skin
-  fill(255, 204, 0)
-  circle(x,y, 100)
+  sensS1X = sensSmileFaceChecksX(moveS1X, rayS1, sensS1X);
+  sensS1Y = sensSmileFaceChecksY(moveS1Y, rayS1, sensS1Y);
 
-  //eyes
-  circle(x+17,y-10,10)
-  circle(x+17,y-10,1)
+  sensS2X = sensSmileFaceChecksX(moveS2X, rayS2, sensS2X);
+  sensS2Y = sensSmileFaceChecksY(moveS2Y, rayS2, sensS2Y);
 
-  circle(x-17,y-10,10)
-  circle(x-17,y-10,1)
+  moveS1X += sensS1X * speedS1;
+  moveS1Y += sensS1Y * speedS1;
 
-  line(x-30, y-30, x-10, y-10);
-  line(x+30, y, x+10, y+10);
+  moveS2X += sensS2X * speedS2;
+  moveS2Y += sensS2Y * speedS2;
 
-  //mouth
-  arc(x ,y+20 , 43 , 25 , 0 ,Math.PI)
-
-
-}
-
-
-function smileFaceRadu(x, y) {
-  // skin
-  fill("#ffff00");
-  circle(x, y, 100);
-
-  // hair 
-  fill("#000000");
-  line(x-30, y-50, x-20, y-40)
-  line(x-25, y-60, x-20, y-40)
-  line(x-10, y-60, x-10, y-40)
-  line(x+5, y-60, x-10, y-40)
-  line(x+15, y-60, x, y-40)
-  line(x+25, y-60, x, y-40)
-
-  // eyes
-  fill("#ffffff");
-  circle(x-20, y-20, 20);
-  circle(x+20, y-20, 20);
-
-  // iris
-  fill("#0000ff");
-  circle(x+20, y-20, 7) 
-  circle(x-20, y-20, 7)
-
-  // mouth
-  fill("#ff0000");
-  arc(x, y+20, 40, 20, 0, Math.PI)
+  smileFaceIustin(moveS1X, moveS1Y, rayS1*2);
+  smileFaceRadu(moveS2X, moveS2Y, rayS2*2);
 }
