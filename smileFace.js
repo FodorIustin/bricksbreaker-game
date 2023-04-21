@@ -4,17 +4,17 @@ function smileFaceIustin(x, y, d){
     circle(x,y,d)
   
     //eyes
-    circle(x+17,y-10,10)
-    circle(x+17,y-10,1)
+    circle(x+d*0.17,y-d*0.10, d*0.10)
+    circle(x+d*0.17,y-d*0.10, d*0.1)
+
+    circle(x-d*0.17,y-d*0.10,d*0.10)
+    circle(x-d*0.17,y-d*0.10,d*0.1)
   
-    circle(x-17,y-10,10)
-    circle(x-17,y-10,1)
-  
-    line(x-30, y-30, x-10, y-10);
-    line(x+30, y, x+10, y+10);
+    line(x-d*0.30, y-d*0.30, x-d*0.10, y-d*0.10);
+    line(x+d*0.30, y, x+d*0.10, y+d*0.10);
   
     //mouth
-    arc(x ,y+20 , 43 , 25 , 0 ,Math.PI)
+    arc(x ,y+d*0.20 , d*0.43 , d*0.25 , 0 ,Math.PI)
   }
   
   
@@ -25,26 +25,26 @@ function smileFaceIustin(x, y, d){
   
     // hair 
     fill("#000000");
-    line(x-30, y-50, x-20, y-40)
-    line(x-25, y-60, x-20, y-40)
-    line(x-10, y-60, x-10, y-40)
-    line(x+5, y-60, x-10, y-40)
-    line(x+15, y-60, x, y-40)
-    line(x+25, y-60, x, y-40)
+    line(x-d*0.30, y-d*0.50, x-d*0.20, y-d*0.40)
+    line(x-d*0.25, y-d*0.60, x-d*0.20, y-d*0.40)
+    line(x-d*0.10, y-d*0.60, x-d*0.10, y-d*0.40)
+    line(x+d*0.5, y-d*0.60, x-d*0.10, y-d*0.40)
+    line(x+d*0.15, y-d*0.60, x, y)
+    line(x+d*0.25, y-d*0.60, x, y-d*0.40)
   
     // eyes
     fill("#ffffff");
-    circle(x-20, y-20, 20);
-    circle(x+20, y-20, 20);
+    circle(x-d*0.20, y-d*0.20, d*0.20);
+    circle(x+d*0.20, y-d*0.20, d*0.20);
   
     // iris
     fill("#0000ff");
-    circle(x+20, y-20, 7) 
-    circle(x-20, y-20, 7)
+    circle(x+d*0.20, y-d*0.20, d*0.07) 
+    circle(x-d*0.20, y-d*0.20, d*0.07)
   
     // mouth
     fill("#ff0000");
-    arc(x, y+20, 40, 20, 0, Math.PI)
+    arc(x, y+d*0.20, d*0.40, d*0.20, 0, Math.PI)
   }
 
 function sensSmileFaceChecksX(x, r, sensInitial) {

@@ -7,8 +7,8 @@ let moveS2Y = 100;
 let speedS1 = 3;
 let speedS2 = 2;
 
-let rayS1 = 50;
-let rayS2 = 50;
+let rayS1 = 15;
+let rayS2 = 15;
 
 let sensS1X = 1;
 let sensS1Y = 1;
