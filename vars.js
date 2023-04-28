@@ -1,3 +1,5 @@
+let bricks = [];
+
 const SmileFaceRadu = {
     x: 200,
     y: 100,

@@ -1,5 +1,7 @@
 function setup() {
   createCanvas(400, 400)
+
+  initBricks()
 }
 
 function draw(){
@@ -23,4 +25,6 @@ function draw(){
   smileFaceRadu(SmileFaceRadu.x, SmileFaceRadu.y, SmileFaceRadu.ray*2);
 
   bottomBar();
+
+  showBricks();
 }
