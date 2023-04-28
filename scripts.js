@@ -4,12 +4,9 @@ function setup() {
 
 function draw(){
   background("#00ffff")
-}
-
-function smileFaceIustin(x,y){
-  //skin
-  fill(255, 204, 0)
-  circle(x,y, 100)
+  
+  sensS1X = sensSmileFaceChecksX(moveS1X, rayS1, sensS1X);
+  sensS1Y = sensSmileFaceChecksY(moveS1Y, rayS1, sensS1Y);
 
   SmileFaceRadu.sensX = sensSmileFaceChecksX(SmileFaceRadu.x, SmileFaceRadu.ray, SmileFaceRadu.sensX);
   SmileFaceRadu.sensY = sensSmileFaceChecksY(SmileFaceRadu.y, SmileFaceRadu.ray, SmileFaceRadu.sensY);
