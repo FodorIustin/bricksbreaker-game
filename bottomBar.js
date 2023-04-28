@@ -1,6 +1,7 @@
 function bottomBarCheck(smileFace) {
   if (
-    smileFace.y+smileFace.ray >= BottomBar.bootomYPosition &&
+    smileFace.y+smileFace.ray >= BottomBar.bootomYPosition && 
+    smileFace.y+smileFace.ray <= limitBottom &&
     smileFace.x+smileFace.ray > mouseX - Math.round(BottomBar.width / 2) &&
     smileFace.x-smileFace.ray < mouseX + Math.round(BottomBar.width / 2)
   ) {
