@@ -10,6 +10,7 @@ function draw(){
 
   SmileFaceRadu.sensX = sensSmileFaceChecksX(SmileFaceRadu.x, SmileFaceRadu.ray, SmileFaceRadu.sensX);
   SmileFaceRadu.sensY = sensSmileFaceChecksY(SmileFaceRadu.y, SmileFaceRadu.ray, SmileFaceRadu.sensY);
+  SmileFaceRadu.sensY = bottomBarCheck(SmileFaceRadu);
 
   SmileFaceIustin.x += SmileFaceIustin.sensX * SmileFaceIustin.speed;
   SmileFaceIustin.y += SmileFaceIustin.sensY * SmileFaceIustin.speed;
@@ -19,4 +20,6 @@ function draw(){
 
   smileFaceIustin(SmileFaceIustin.x, SmileFaceIustin.y, SmileFaceIustin.ray*2);
   smileFaceRadu(SmileFaceRadu.x, SmileFaceRadu.y, SmileFaceRadu.ray*2);
+
+  bottomBar();
 }

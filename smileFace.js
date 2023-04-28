@@ -68,10 +68,10 @@ function sensSmileFaceChecksY(y, r, sensInitial) {
     return 1;
   }
   // verificare limita BOOTOM
-  if (y > limitBottom - r) {
-    // schimbare de sens
-    return -1;
-  }
+  // if (y > limitBottom - r) {
+  //   // schimbare de sens
+  //   return -1;
+  // }
 
   return sensInitial;
 }
