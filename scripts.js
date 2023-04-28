@@ -1,3 +1,19 @@
+let moveS1X = 300;
+let moveS1Y = 200;
+let moveS2x;
+let moveS2Y;
+let speed = 10;
+let rayS1 = 50;
+
+
+let senseS1Y = 1;
+ let senseS1X = 1;
+
+let limitTop = 0;
+let limitBottom = 400;
+let limitRight = 400;
+let limitLeft = 0;
+
 function setup() {
   createCanvas(400, 400)
 }
@@ -7,10 +23,10 @@ function draw(){
   smileFaceRadu(200, 250);
 }
 
-function smileFaceIustin(x,y){
+function smileFaceIustin(x,y,d){
   //skin
   fill(255, 204, 0)
-  circle(x,y, 100)
+  circle(x,y,d)
 
   //eyes
   circle(x+17,y-10,10)
