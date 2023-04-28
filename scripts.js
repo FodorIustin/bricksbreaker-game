@@ -4,19 +4,19 @@ function setup() {
 
 function draw(){
   background("#00ffff")
-  
-  sensS1X = sensSmileFaceChecksX(moveS1X, rayS1, sensS1X);
-  sensS1Y = sensSmileFaceChecksY(moveS1Y, rayS1, sensS1Y);
+
+  SmileFaceIustin.sensX = sensSmileFaceChecksX(SmileFaceIustin.x, SmileFaceIustin.ray, SmileFaceIustin.sensX);
+  SmileFaceIustin.sensY = sensSmileFaceChecksY(SmileFaceIustin.y, SmileFaceIustin.ray, SmileFaceIustin.sensY);
 
   SmileFaceRadu.sensX = sensSmileFaceChecksX(SmileFaceRadu.x, SmileFaceRadu.ray, SmileFaceRadu.sensX);
   SmileFaceRadu.sensY = sensSmileFaceChecksY(SmileFaceRadu.y, SmileFaceRadu.ray, SmileFaceRadu.sensY);
 
-  moveS1X += sensS1X * speedS1;
-  moveS1Y += sensS1Y * speedS1;
+  SmileFaceIustin.x += SmileFaceIustin.sensX * SmileFaceIustin.speed;
+  SmileFaceIustin.y += SmileFaceIustin.sensY * SmileFaceIustin.speed;
 
   SmileFaceRadu.x += SmileFaceRadu.sensX * SmileFaceRadu.speed;
   SmileFaceRadu.y += SmileFaceRadu.sensY * SmileFaceRadu.speed;
 
-  smileFaceIustin(moveS1X, moveS1Y, rayS1*2);
+  smileFaceIustin(SmileFaceIustin.x, SmileFaceIustin.y, SmileFaceIustin.ray*2);
   smileFaceRadu(SmileFaceRadu.x, SmileFaceRadu.y, SmileFaceRadu.ray*2);
 }
