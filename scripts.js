@@ -10,10 +10,12 @@ function draw(){
   SmileFaceIustin.sensX = sensSmileFaceChecksX(SmileFaceIustin.x, SmileFaceIustin.ray, SmileFaceIustin.sensX);
   SmileFaceIustin.sensY = sensSmileFaceChecksY(SmileFaceIustin.y, SmileFaceIustin.ray, SmileFaceIustin.sensY);
   SmileFaceIustin.sensY = bottomBarCheck(SmileFaceIustin);
+  SmileFaceIustin.sensY = bricksCheck(SmileFaceIustin);
 
   SmileFaceRadu.sensX = sensSmileFaceChecksX(SmileFaceRadu.x, SmileFaceRadu.ray, SmileFaceRadu.sensX);
   SmileFaceRadu.sensY = sensSmileFaceChecksY(SmileFaceRadu.y, SmileFaceRadu.ray, SmileFaceRadu.sensY);
   SmileFaceRadu.sensY = bottomBarCheck(SmileFaceRadu);
+  SmileFaceRadu.sensY = bricksCheck(SmileFaceRadu);
 
   SmileFaceIustin.x += SmileFaceIustin.sensX * SmileFaceIustin.speed;
   SmileFaceIustin.y += SmileFaceIustin.sensY * SmileFaceIustin.speed;
